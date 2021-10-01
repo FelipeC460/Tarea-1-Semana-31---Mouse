@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cuadro</title>
+	<style>
+		.fondo{
+		 	position: absolute;
+			width: 98%;
+			height: 95%;
+			background: #F9E79F ;
+			top: 10px;
+			left: 10px;
+			font-size: 80px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			color: purple;
+			padding-left: 100px;
+			box-sizing: border-box;
+			border-color: #F1C40F ;
+			border-width: 10px;
+			border-style: double;
+		 }
+
+		.Titt{
+		 	position: absolute;
+			width: 400px;
+			height: 80px;
+			background: #D5F5E3;
+			top: 30px;
+			left: 400px;
+			font-size: 50px;
+			padding-top: -10px;
+			padding-bottom: 20px;
+			color: #566573;
+			padding-left: 100px;
+			box-sizing: border-box;
+			border-color: #7FB3D5 ;
+			border-width: 10px;
+			border-style: double;
+		 }
+
+		 	.ranc{
+		 	position: absolute;
+			width: 90%;
+			height: 70%;
+			background: #7FB3D5;
+			top: 150px;
+			left: 50px;
+			font-size: 80px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			color: purple;
+			padding-left: 100px;
+			box-sizing: border-box;
+			border-color: white;
+			border-width: 10px;
+			border-style: double;
+		 }
+
+		 .player{
+		 	position: absolute;
+			width: 1%;
+			height: 20%;
+			background: #D2B4DE ;
+			top: 160px;
+			left: 60px;
+			font-size: 80px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			color: purple;
+			padding-left: 100px;
+			box-sizing: border-box;
+			border-color: purple;
+			border-width: 5px;
+			border-style: solid;
+			transition: 1s all;
+		 }
+.soni{
+	position: absolute;
+	top: 300px;
+}
+
+
+	</style>
+</head>
+<body>
+	
+
+	<div class="fondo">
+
+
+<div class="Titt"><font face="comic Sans MS,Arial,Verdana">Juego</font></div>
+
+<div class="ranc">  </div>
+
+<div class="player" onclick="mover(event)" id="jugador">
+	
+	<audio src="gus.OGG" id="gos" ></audio>
+</div>	
+
+</div>
+	<script>
+
+function mover(event) {
+
+   numx=Math.floor((Math.random() * (1117-60))+60);
+   numy=Math.floor((Math.random() * (428-160))+160);
+	jugador.style.left=numx+"px";
+	jugador.style.top=numy+"px";
+	gos.play();
+}
+
+
+	</script>
+
+</body>
+</html>

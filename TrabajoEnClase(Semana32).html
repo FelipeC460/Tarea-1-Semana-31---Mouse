@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<title>Tarea #1</title>
+	<style >
+
+		.fondo{
+			position: absolute;
+			width: 95%;
+			height: 87%;
+			top: 2%;
+			background-color:   #F4D03F;
+			border-color:  #F9E79F;
+			border-width: 30px;
+			border-style: double;
+
+		}
+
+		.hola{ 
+			position: absolute;
+			width: 350px;
+			height: 450px;
+			background: #E8F8F5;
+			top: 20px;
+			left: 90px;
+			padding-left: 40px;
+			border-color: #D4E6F1 ;
+			border-width: 30px;
+			border-style: double;
+		 }
+
+		 .texto{
+		 	position: absolute;
+			width: 500px;
+			background: pink;
+			top: 20px;
+			left: 600px;
+			font-size: 80px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			color: purple;
+			padding-left: 100px;
+			box-sizing: border-box;
+			border-color: purple;
+			border-width: 10px;
+			border-style: double;
+		 }
+		 .dife{
+		 	left: 10%;
+		 	font-size: 50px;
+		 	color: #EBF5FB ;
+		 }
+
+		 .cuadro12{
+		 	position: absolute;
+			width: 300px;
+			background: pink;
+			top: 40px;
+			left: 50px;
+			height: 60px;
+			font-size: 20px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			color: purple;
+			padding-left: 100px;
+			box-sizing: border-box;
+			border-color: purple;
+			border-width: 10px;
+			border-style: double;
+		 }
+
+.cuadro2{
+		 	position: absolute;
+			width: 300px;
+			background: pink;
+			top: 120px;
+			left: 50px;
+			height: 60px;
+			font-size: 50px;
+		 }
+
+		.cuadro3{
+		 	position: absolute;
+			width: 300px;
+			background: pink;
+			top: 220px;
+			left: 50px;
+			height: 60px;
+			font-size: 50px;
+		 }
+
+		 .ingre{
+		 	position: absolute;
+			width: 300px;
+			background: pink;
+			top: 350px;
+			left: 50px;
+			height: 60px;
+			font-size: 20px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			color: purple;
+			padding-left: 100px;
+			box-sizing: border-box;
+			border-color: purple;
+			border-width: 10px;
+			border-style: double;
+		 }
+
+	</style>
+</head>
+<body>
+	<div class="fondo">
+	<div class="texto" id="respu" ><font face="comic Sans MS,Arial,Verdana">Menú</font></div>
+
+
+	<div class="hola"> <div class="cuadro12">Ingresar</div> 
+	
+	<div class="ingre" onclick="agregar()"> Enter </div> 
+
+	<form>
+		<br><br><br><br><br><br><br><br><br>
+
+		<input type="text" id="resultado" class="cuadro2" placeholder="   Producto">
+		<br><br>
+		<input type="text" id="resultado1" class="cuadro3" placeholder="   Precio">
+	</form>
+        </div>
+</div>
+<script>
+
+	function agregar() {
+		hola=resultado.value;
+		hola1=resultado1.value;
+		nuevot="<div class='dife'>"+hola+" "+hola1+"</div>";
+		conte=respu.innerHTML;
+		conte=conte+nuevot; 
+		respu.innerHTML=conte;
+		console.log(conte);
+	}
+</script>
+
+
+</body>
+</html>
