@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Principal</title>
+	<title>Preguntas</title>
 	<style>
 		.fondo{
-		 	position: absolute;
-			width: 98%;
-			height: 95%;
-			background: #F9E79F ;
-			top: 10px;
-			left: 10px;
-			font-size: 80px;
-			padding-top: 10px;
-			padding-bottom: 20px;
-			color: purple;
-			padding-left: 100px;
-			box-sizing: border-box;
-			border-color: #F1C40F ;
-			border-width: 10px;
+			position: absolute;
+			width: 95%;
+			height: 87%;
+			top: 2%;
+			background-color:   #F4D03F;
+			border-color:  #F9E79F;
+			border-width: 30px;
 			border-style: double;
-		 }
-
-		 .Tity{
-		 	position: absolute;
+		}
+		.qst{
+		position: absolute;
 			width: 40%;
 			height: 20%;
 			background: #F9E79F ;
-			top: 15%;
+			top: 7%;
 			left: 30%;
 			font-size: 50px;
 			padding-top: 10px;
@@ -37,32 +29,15 @@
 			border-color: #F1C40F ;
 			border-width: 10px;
 			border-style: double;
-		 }
+		}
 
-		 .men{
+		.res{
 		 	position: absolute;
 			width: 40%;
 			height: 20%;
 			background: #F9E79F ;
 			top: 40%;
-			left: 51%;
-			font-size: 50px;
-			padding-top: 10px;
-			padding-bottom: 20px;
-			color: purple;
-			padding-left: 100px;
-			box-sizing: border-box;
-			border-color: #F1C40F ;
-			border-width: 10px;
-			border-style: double;
-		 }
-		 .juego{
-		 	position: absolute;
-			width: 40%;
-			height: 20%;
-			background: #F9E79F ;
-			top: 40%;
-			left: 9%;
+			left: 5%;
 			font-size: 50px;
 			padding-top: 10px;
 			padding-bottom: 20px;
@@ -74,17 +49,252 @@
 			border-style: double;
 		 }
 
+		 .bt{
+		 	position: absolute;
+			width: 40%;
+			height: 20%;
+			background: #F9E79F ;
+			top: 40%;
+			left: 55%;
+			font-size: 50px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			color: orange;
+			padding-left: 100px;
+			box-sizing: border-box;
+			border-color: #F1C40F ;
+			border-width: 10px;
+			border-style: double;
 		 }
+ .pt{
+		 	position: absolute;
+			width: 70%;
+			height: 30%;
+			background: #F9E79F ;
+			top: 65%;
+			left: 15%;
+			font-size: 50px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			color: purple;
+			padding-left: 100px;
+			box-sizing: border-box;
+			border-color: #F1C40F ;
+			border-width: 10px;
+			border-style: double;
+		 }
+
+		  .ver{
+		 	position: absolute;
+			width: 20%;
+			height: 20%;
+			background: #F9E79F ;
+			top: 10%;
+			left: 5%;
+			font-size: 50px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			color: purple;
+			padding-left: 50px;
+			box-sizing: border-box;
+			border-color: #F1C40F ;
+			border-width: 10px;
+			border-style: double;
+		 }
+		 .fondo2{
+			position: absolute;
+			width: 0%;
+			height: 0%;
+			top: 2%;
+			background-color:   #ABFF89 ;
+			border-color:  green;
+			border-width: 0px;
+			border-style: double;
+			transition: all 3s;
+		}
+
+		.cuadrocasiultimo{
+			position: absolute;
+		 	border-radius: 20px;
+			width: 0%;
+			height: 0%;
+			background: #F9E79F ;
+			top: 20%;
+			left: 20%;
+			font-size: 40px;
+			padding-top: 2px;
+			padding-bottom: 50px;
+			color: orange;
+			padding-left: 130px;
+			box-sizing: border-box;
+			border-color: #F1C40F ;
+			border-width: 15px;
+			border-style: solid;
+			opacity: 0;
+			transition: all 2s 1;
+		}
+		.cuadrocasiultimoII{
+			position: absolute;
+		 	border-radius: 20px;
+			width: 0%;
+			height: 0%;
+			background: #F9E79F ;
+			top: 40%;
+			left: 30%;
+			font-size: 40px;
+			padding-top: 10px;
+			padding-bottom: 50px;
+			color: orange;
+			padding-left: 95px;
+			box-sizing: border-box;
+			border-color: green ;
+			border-width: 15px;
+			border-style: solid;
+			opacity: 0;
+			transition: all 2s 1;
+		}
+
+
+		 .temporizador{
+position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 7%;
+    left: 80%;
+    display: flex;
+    border: #F1C40F double 10px;
+    opacity: 1;
+    background: #F9E79F;
+    font-size: 55px;
+    background-size: cover;
+    color: purple;
+    padding-left:70px;
+    padding-top:15px;
+    box-sizing: border-box;
+}
 
 	</style>
-</head>
-<body>
-	<div class="fondo">
-		<div class="Tity"> Bienvenido </div>
 
-<a href="TrabajoEnClase(Semana32).html"><div class="men" >Menú</div></a>
-<a href="TareaAleatorioCuadro.html"><div class="juego">Juego</div></a>
-	</div>
+</head>
+
+<body>
+<div class="fondo"> <div class="qst" id="cuapre"></div>
+
+<div class="bt" onclick="question()"> Solicitar Pregunta </div>
+<div class="pt" id="tot">Points : 0</div>
+<div class="ver" onclick="verificar()">Verificar</div>
+
+<div class="temporizador" id="crono"> </div>
+
+<form>
+	<input type="text" id="resultadooo" class="res" placeholder="   Respuesta">
+</form>
+</div>
+
+<div class="fondo2" id="ult"></div>
+<div class="cuadrocasiultimo" id="caII" ><font face="Ravie">Total De Puntos :</div>
+<div class="cuadrocasiultimoII" id="caIII"> </div>
+
+<script>
+
+ point=0;
+  x=60;
+
+
+	function question() {
+
+		
+            
+		
+		
+		 I=Math.floor((Math.random() * (51-1))+1);
+         D=Math.floor((Math.random() * (51-1))+1);
+         O=Math.floor((Math.random() * (3-1))+1);
+         
+         if (O==1) {
+         	O="+";
+         }
+         else
+         {
+      	if (O==2) {
+         	O="-";
+         }
+     }
+         
+         cuapre.innerHTML=I+" "+" "+O+" "+D;
+     
+     
+}
+   
+    
+    tiempoo=setInterval(cronometro,1000);
+
+            function cronometro() {
+            if (x==0){
+            	crono.innerHTML=x;
+            	ult.style.width=95+"%";
+            	ult.style.height=85+"%";
+            	ult.style.borderWidth=30+"px";              
+                
+
+                caII.style.width=40+"%";
+            	caII.style.height=20+"%";
+            	caII.style.borderWidth=10+"px"; 
+            	caII.style.color="red";
+            	caII.style.opacity=1;
+
+            	caIII.style.width=20+"%";
+            	caIII.style.height=10+"%";
+            	caIII.style.borderWidth=10+"px"; 
+            	caIII.style.color="blue";
+            	caIII.style.opacity=1;
+            	caIII.innerHTML=point;
+
+            	clearIntervel(tiempoo); 
+
+            }
+             else
+            {
+                crono.innerHTML=x;
+                x=x-1;
+            }
+        }
+   
+   
+
+	function verificar() {
+		Nu1=Number(resultadooo.value);
+		console.log(Nu1);
+     if (O=="+")
+      {     	
+     	totall=I+D;  
+     	if (Nu1==totall) {
+     	point=point+10;
+        tot.innerHTML="Points :"+" "+point;
+     	}
+     }
+
+     	 if (O=="-") {
+     	
+     	totall=I-D;
+    
+
+     	if (Nu1==totall) {
+     	point=point+10;
+       tot.innerHTML="Points :"+" "+point;
+     	}
+     }  
+     
+
+   	     if (Nu1<totall||Nu1>totall) {
+     	point=point-10;
+        tot.innerHTML="Points :"+" "+point;
+     	}
+     }
+  
+     
+</script>
+
 
 </body>
 </html>
